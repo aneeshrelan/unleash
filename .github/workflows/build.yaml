@@ -40,7 +40,7 @@ jobs:
     - run: yarn lint
     - run: yarn run test:coverage
     - name: Upload coverage report from master
-    - uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: test-coverage-report-master
         path: report.json
